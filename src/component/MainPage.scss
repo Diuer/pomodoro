@@ -1,0 +1,17 @@
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &:empty::before{
+        content: 'You don’t have any task now, please add task first!';
+    }
+
+    footer{
+        font-size: 10px;
+        line-height: 12px;
+        color: #333333;
+        font-weight: 300;
+    }
+}
