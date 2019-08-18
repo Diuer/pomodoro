@@ -183,15 +183,18 @@
                         padding: 10px 0 5px 0;
                     }
                     button{
-                        width: 220px;
+                        width: calc(50% - 20px);
                         height: 40px;
-                        margin: 10px 0;
+                        margin: 10px;
                         border-radius: 30px;
                         border: 0;
                         color: #FCFCFC;
                         background-color: #EA5548;
                         font-size: 14px;
                         line-height: 17px;
+                        &.edit-todo-delete{
+                            background-color: #ACACAC;
+                        }
                     }
                 }
                 .edit-done{

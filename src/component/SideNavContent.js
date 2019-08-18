@@ -137,6 +137,7 @@ class SideNavContent extends React.Component{
                                             <p className='edit-todo-title'>TASK TITLE</p>
                                             <input className='title' type='text' onChange={this.onChangeTask} value={this.state.title}/>
                                             <button className='edit-todo-save' onClick={()=>{this.handleTasks({'doType':'edit', 'doIndex': index})}}>SAVE</button>
+                                            <button className='edit-todo-delete' onClick={()=>{handleTasks({'doType':'delete', 'doIndex': index})}}>DELETE</button>
                                         </div>
                                         )}
                                     </li>

@@ -307,6 +307,18 @@ class App extends React.Component {
         })
       break
       
+      case 'delete':
+        if(doIndex===0){
+          return
+        }
+        tasks.splice(doIndex, 1)
+
+        this._resetTask()
+        this.setState({
+          tasks
+        })
+      break
+
       case 'redo':
         passedTasks[doIndex].nowTimePlace = this.workTimeLength
         passedTasks[doIndex].isCompleted = false
